@@ -39,7 +39,7 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/simd \
 	$(LOCAL_PATH)/android
 
 ifeq ($(ANDROID_JPEG_USE_VENUM),true)
-LOCAL_CFLAGS := -DANDROID_JPEG_USE_VENUM
+LOCAL_CFLAGS := -DANDROID_JPEG_USE_VENUM -O3
 AM_CFLAGS := -march=armv7-a -mfpu=neon
 AM_CCASFLAGS := -march=armv7-a -mfpu=neon
 endif
